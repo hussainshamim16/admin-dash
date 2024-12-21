@@ -127,7 +127,7 @@ const { user, registrationError } = useSelector(registerpage);
                                             placeholder="Enter username"
                                             onChange={validation.handleChange}
                                             onBlur={validation.handleBlur}
-                                            value={"@admin:Solutionsgram.com" || ""}
+                                            value={validation.values.username || ""}
                                             invalid={
                                                 validation.touched.username && validation.errors.username ? true : false
                                             }
@@ -167,7 +167,7 @@ const { user, registrationError } = useSelector(registerpage);
                     </Card>
                     <div className="mt-5 text-center">
                         <p className="text-white-50">Already have an account ?<Link to="/login" className="fw-medium text-primary"> Login </Link> </p>
-                        <p className="text-white-50">© {new Date().getFullYear()} Lilani. Crafted with <i className="mdi mdi-heart text-danger"></i> by <a href='https://solutionsgram.com/' target='_blanck'>Solutionsgram</a></p>
+                        <p className="text-white-50">© {new Date().getFullYear()} L. Crafted with <i className="mdi mdi-heart text-danger"></i> by <a href='https://solutionsgram.com/' target='_blanck'>Solutionsgram</a></p>
                     </div>
                 </Col>
             </Row>

@@ -60,7 +60,7 @@ const Login = () => {
                               className="form-control"
                               id="username"
                               placeholder="Enter username"
-                              defaultValue="admin@soutionsgram.com"
+                              defaultValue="admin@themesbrand.com"
                             />
                           </div>
                           <div className="mb-4">

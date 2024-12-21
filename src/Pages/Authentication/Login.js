@@ -40,7 +40,7 @@ import { loginUser, socialLogin } from "../../store/actions";
 import { createSelector } from "reselect";
 
 const Login = (props) => {
-  document.title = "Login | Lilani - Admin & Dashboard";
+  document.title = "Login | lilani - Admin & Dashboard";
 
   const dispatch = useDispatch();
 
@@ -49,7 +49,7 @@ const Login = (props) => {
     enableReinitialize: true,
 
     initialValues: {
-      email: "admin@solutionsgram.com" || "",
+      email: "admin@Themesdesign.com" || "",
       password: "123456" || "",
     },
     validationSchema: Yup.object({
@@ -318,7 +318,7 @@ const Login = (props) => {
                   </Link>{" "}
                 </p>
                 <p className="text-white-50">
-                  © {new Date().getFullYear()} Lilani. Crafted with{" "}
+                  © {new Date().getFullYear()} lilani. Crafted with{" "}
                   <i className="mdi mdi-heart text-danger"></i> by <a href='https://solutionsgram.com/' target='_blanck'>Solutionsgram</a>
                 </p>
               </div>
