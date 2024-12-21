@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React, { useEffect } from "react";
-import logolight from "../../assets/images/logo-light.png";
-import logodark from "../../assets/images/logo-dark.png";
+import logolight from "../../assets/images/lilanitwo.png";
+import logodark from "../../assets/images/lilanitwo.png";
 
 import {
   Row,
@@ -40,7 +40,7 @@ import { loginUser, socialLogin } from "../../store/actions";
 import { createSelector } from "reselect";
 
 const Login = (props) => {
-  document.title = "Login | Upzet - React Admin & Dashboard Template";
+  document.title = "Login | Lilani - Admin & Dashboard";
 
   const dispatch = useDispatch();
 
@@ -49,7 +49,7 @@ const Login = (props) => {
     enableReinitialize: true,
 
     initialValues: {
-      email: "admin@Themesdesign.com" || "",
+      email: "admin@solutionsgram.com" || "",
       password: "123456" || "",
     },
     validationSchema: Yup.object({
@@ -142,7 +142,7 @@ const Login = (props) => {
                       Welcome Back !
                     </h4>
                     <p className="mb-5 text-center">
-                      Sign in to continue to Upzet.
+                      Sign in to continue to Lilani.
                     </p>
                     <Form
                       className="form-horizontal"
@@ -318,8 +318,8 @@ const Login = (props) => {
                   </Link>{" "}
                 </p>
                 <p className="text-white-50">
-                  © {new Date().getFullYear()} Upzet. Crafted with{" "}
-                  <i className="mdi mdi-heart text-danger"></i> by Themesdesign
+                  © {new Date().getFullYear()} Lilani. Crafted with{" "}
+                  <i className="mdi mdi-heart text-danger"></i> by <a href='https://solutionsgram.com/' target='_blanck'>Solutionsgram</a>
                 </p>
               </div>
             </Col>
