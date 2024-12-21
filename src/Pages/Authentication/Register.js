@@ -127,7 +127,7 @@ const { user, registrationError } = useSelector(registerpage);
                                             placeholder="Enter username"
                                             onChange={validation.handleChange}
                                             onBlur={validation.handleBlur}
-                                            value={validation.values.username || ""}
+                                            value={"@admin:Solutionsgram.com" || ""}
                                             invalid={
                                                 validation.touched.username && validation.errors.username ? true : false
                                             }
