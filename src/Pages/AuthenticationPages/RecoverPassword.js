@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-import logolight from '../../assets/images/logo-light.png';
-import logodark from '../../assets/images/logo-dark.png';
+import logolight from '../../assets/images/rever.png';
+import logodark from '../../assets/images/rever.png';
 
 import { Container, Row, Col, Card, CardBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const RecoverPassword = () => {
-    document.title = "Recover Password | Upzet - React Admin & Dashboard Template";
+    document.title = "Recover Password | Lilani - React Admin & Dashboard";
     return (
         <React.Fragment>
             <div className="bg-pattern" style={{height:"100vh"}}>
@@ -27,7 +27,7 @@ const RecoverPassword = () => {
                                                  </Link>
                                             </div>
                                             <h4 className="font-size-18 text-muted mt-2 text-center">Reset Password</h4>
-                                            <p className="mb-5 text-center">Reset your Password with Upzet.</p>
+                                            <p className="mb-5 text-center">Reset your Password with Lilani.</p>
                                             <form className="form-horizontal" action="#">
                                                 <Row>
                                                     <Col md={12}>
@@ -51,7 +51,7 @@ const RecoverPassword = () => {
                                 </Card>
                                 <div className="mt-5 text-center">
                                     <p className="text-white-50">Don't have an account ?  <Link to="/auth-register" className="fw-medium text-primary"> Register  </Link> </p>
-                                    <p className="text-white-50">© {new Date().getFullYear()} Upzet. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                                    <p className="text-white-50">© {new Date().getFullYear()} Lilani. Crafted with <i className="mdi mdi-heart text-danger"></i> by <a href='https://solutionsgram.com/' target='_blanck'>Solutionsgram</a></p>
                                 </div>
                             </Col>
                         </Row>

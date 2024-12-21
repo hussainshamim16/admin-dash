@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import logolight from "../../assets/images/logo-light.png";
-import logodark from "../../assets/images/logo-dark.png";
+import logolight from "../../assets/images/rever.png";
+import logodark from "../../assets/images/rever.png";
 
 import { Container, Row, Col, Card, CardBody, Form } from "reactstrap";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 // import
 
 const Login = () => {
-  document.title = "Login | Upzet - React Admin & Dashboard Template";
+  document.title = "Login | Lilani - Admin & Dashboard";
     useEffect(() => {
         document.body.className = "bg-pattern";
         // remove classname when component will unmount
@@ -46,7 +46,7 @@ const Login = () => {
                       Welcome Back !
                     </h4>
                     <p className="mb-5 text-center">
-                      Sign in to continue to Upzet.
+                      Sign in to continue to Lilani.
                     </p>
                     <Form className="form-horizontal" action="#">
                       <Row>
@@ -60,7 +60,7 @@ const Login = () => {
                               className="form-control"
                               id="username"
                               placeholder="Enter username"
-                              defaultValue="admin@themesbrand.com"
+                              defaultValue="admin@soutionsgram.com"
                             />
                           </div>
                           <div className="mb-4">
@@ -131,8 +131,8 @@ const Login = () => {
                   </Link>{" "}
                 </p>
                 <p className="text-white-50">
-                  © {new Date().getFullYear()} Upzet. Crafted with{" "}
-                  <i className="mdi mdi-heart text-danger"></i> by Themesdesign
+                  © {new Date().getFullYear()} Lilani. Crafted with{" "}
+                  <i className="mdi mdi-heart text-danger"></i> by <a href='https://solutionsgram.com/' target='_blanck'>Solutionsgram</a>
                 </p>
               </div>
             </Col>

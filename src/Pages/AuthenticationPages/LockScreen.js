@@ -1,7 +1,7 @@
 import React from 'react';
-import logolight from '../../assets/images/logo-light.png';
-import logodark from '../../assets/images/logo-dark.png';
-import avatar1 from '../../assets/images/users/avatar-1.jpg'
+import logolight from '../../assets/images/rever.png';
+import logodark from '../../assets/images/rever.png';
+import avatar1 from '../../assets/images/rever.png'
 import { Container, Row, Col, Card, CardBody } from 'reactstrap';
 
 import { Link } from 'react-router-dom';
@@ -50,7 +50,7 @@ const LockScreen = () => {
                                 </Card>
                                 <div className="mt-5 text-center">
                                     <p className="text-white-50">Not you ? return<Link to="/auth-login" className="fw-medium text-primary"> Sign In </Link> </p>
-                                    <p className="text-white-50">© {new Date().getFullYear()} Upzet. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                                    <p className="text-white-50">© {new Date().getFullYear()} Lilani. Crafted with <i className="mdi mdi-heart text-danger"></i> by <a href='https://solutionsgram.com/' target='_blanck'>Solutionsgram</a></p>
                                 </div>
                             </Col>
                         </Row>

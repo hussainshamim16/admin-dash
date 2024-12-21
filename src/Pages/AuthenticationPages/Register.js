@@ -1,13 +1,13 @@
 import React from 'react';
 
-import logolight from '../../assets/images/logo-light.png';
-import logodark from '../../assets/images/logo-dark.png';
+import logolight from '../../assets/images/rever.png';
+import logodark from '../../assets/images/rever.png';
 
 import { Container, Row, Col, Card, CardBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
-    document.title = "Register | Upzet - React Admin & Dashboard Template";
+    document.title = "Signup | Lilani - Admin & Dashboard";
     return (
         <React.Fragment>
 
@@ -27,14 +27,14 @@ const Register = () => {
                                         </div>
 
                                         <h4 className="font-size-18 text-muted text-center mt-2">Free Register</h4>
-                                        <p className="text-muted text-center mb-4">Get your free Upzet account now.</p>
+                                        <p className="text-muted text-center mb-4">Get your free Lilani account now.</p>
                                         <form className="form-horizontal" action="#">
 
                                             <Row>
                                                 <Col md={12}>
                                                     <div className="mb-4">
                                                         <label className="form-label" htmlFor="username">Username</label>
-                                                        <input type="text" className="form-control" id="username" placeholder="Enter username" defaultValue="admin@themesbrand.com" />
+                                                        <input type="text" className="form-control" id="username" placeholder="Enter username" defaultValue="admin@solutionsgram.com" />
                                                     </div>
                                                     <div className="mb-4">
                                                         <label className="form-label" htmlFor="useremail">Email</label>
@@ -58,7 +58,7 @@ const Register = () => {
                                 </Card>
                                 <div className="mt-5 text-center">
                                     <p className="text-white-50">Already have an account ?<Link to="/auth-login" className="fw-medium text-primary"> Login </Link> </p>
-                                    <p className="text-white-50">© {new Date().getFullYear()} Upzet. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                                    <p className="text-white-50">© {new Date().getFullYear()} Lilani. Crafted with <i className="mdi mdi-heart text-danger"></i> by <a href='https://solutionsgram.com/' target='_blanck'>Solutionsgram</a></p>
                                 </div>
                             </Col>
                         </Row>
