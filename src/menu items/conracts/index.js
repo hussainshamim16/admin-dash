@@ -18,30 +18,21 @@ const Contracts = () => {
           <Row>
             <Col lg={12}>
               <Card>
-                <div className="p-3">
-                  <Col className="col-sm-auto">
-                    <div className="d-flex gap-1">
-                      <Button color="success" className="add-btn" onClick={() => Add()} id="create-btn"><i className="ri-add-line align-bottom me-1"></i> Add</Button>
-                      <Button color="soft-danger"
-                      // onClick="deleteMultiple()"
-                      ><i className="ri-delete-bin-2-line"></i></Button>
-                    </div>
-                  </Col>
-                </div>
                 <CardBody>
-                  <h4 className="card-title">Contracts Details</h4>
+                  <h4 className="card-title">Contracts</h4>
                   <p className="card-title-desc">
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br /> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/>
+                  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                   </p>
 
                   <div className="table-responsive">
-                    <table className="table table-bordered border-primary mb-0">
+                    <table className="table table-bordered mb-0">
                       <thead>
                         <tr>
-                          <th>S/No</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Username</th>
+                          <th>#</th>
+                          <th>Contracter Name</th>
+                          <th>Contracter Number</th>
+                          <th>Contract price</th>
                         </tr>
                       </thead>
                       <tbody>

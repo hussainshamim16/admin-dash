@@ -210,16 +210,8 @@ const BasicTable = () => {
           </Row>
 
           <Row>
-            <Col lg={12}>
+            <Col lg={6}>
               <Card>
-                <Col className="col-sm-auto">
-                  <div className="d-flex gap-1">
-                    <Button color="success" className="add-btn" onClick={() => tog_list()} id="create-btn"><i className="ri-add-line align-bottom me-1"></i> Add</Button>
-                    <Button color="soft-danger"
-                    // onClick="deleteMultiple()"
-                    ><i className="ri-delete-bin-2-line"></i></Button>
-                  </div>
-                </Col>
                 <CardBody>
                   <h4 className="card-title">Customers Details</h4>
                   <p className="card-title-desc">
@@ -526,7 +518,7 @@ const BasicTable = () => {
           </Row>
           
           <Row>
-            <Col lg={12}>
+            <Col lg={6}>
               <Card>
                 <CardBody>
                   <h4 className="card-title">Responsive Table</h4>

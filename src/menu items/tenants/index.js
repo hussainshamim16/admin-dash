@@ -29,19 +29,21 @@ const Tenants = () => {
                   </Col>
                 </div>
                 <CardBody>
-                  <h4 className="card-title">Tenants Details</h4>
+                  <h4 className="card-title">Tenants</h4>
                   <p className="card-title-desc">
-                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br /> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    {" "}
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br />
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                   </p>
 
                   <div className="table-responsive">
-                    <table className="table table-bordered border-primary mb-0">
+                    <table className="table table-sm m-0">
                       <thead>
                         <tr>
-                          <th>S/No</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Username</th>
+                          <th>#</th>
+                          <th>Tenants Name</th>
+                          <th>Tenants Name</th>
+                          <th>Tenants</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -62,6 +64,18 @@ const Tenants = () => {
                           <td>Larry</td>
                           <td>the Bird</td>
                           <td>@twitter</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
                         </tr>
                       </tbody>
                     </table>
