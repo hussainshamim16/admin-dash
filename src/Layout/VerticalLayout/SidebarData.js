@@ -22,7 +22,7 @@ const SidebarData = [
     {
         label: "Sellers",
         icon: "ri-map-pin-line",
-        url: "/chart-apexcharts",
+        url: "/sellers",
         issubMenubadge: true,
         bgcolor: "bg-primary",
         badgeValue: "8"
@@ -30,7 +30,7 @@ const SidebarData = [
     {
         label: "Property",
         icon: "ri-share-line",
-        url: "/table-datatables",
+        url: "/property",
         issubMenubadge: true,
         bgcolor: "bg-primary",
         badgeValue: "9"

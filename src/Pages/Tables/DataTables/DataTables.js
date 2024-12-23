@@ -9,12 +9,12 @@ const DataTables = () => {
         <React.Fragment>
             <div className="page-content">
                 <Container fluid>
-                    <Breadcrumbs title="Tables" breadcrumbItem="Datatables" />
+                    <Breadcrumbs title="Tables" breadcrumbItem="Property" />
                     <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
-                                    <h5 className="card-title mb-0">Basic Datatables</h5>
+                                    <h5 className="card-title mb-0">Properties Data</h5>
                                 </CardHeader>
                                 <CardBody>
                                     <BasicTable />
@@ -23,7 +23,7 @@ const DataTables = () => {
                         </Col>
                     </Row>
 
-                    <Row>
+                    {/* <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
@@ -98,7 +98,7 @@ const DataTables = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                    </Row>
+                    </Row> */}
                 </Container>
             </div>
         </React.Fragment>

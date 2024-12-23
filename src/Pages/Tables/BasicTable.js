@@ -212,6 +212,7 @@ const BasicTable = () => {
           <Row>
             <Col lg={12}>
               <Card>
+                <div className="px-3 p-3">
                 <Col className="col-sm-auto">
                   <div className="d-flex gap-1">
                     <Button color="success" className="add-btn" onClick={() => tog_list()} id="create-btn"><i className="ri-add-line align-bottom me-1"></i> Add</Button>
@@ -220,6 +221,7 @@ const BasicTable = () => {
                     ><i className="ri-delete-bin-2-line"></i></Button>
                   </div>
                 </Col>
+                </div>
                 <CardBody>
                   <h4 className="card-title">Customers Details</h4>
                   <p className="card-title-desc">

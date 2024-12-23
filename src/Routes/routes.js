@@ -152,10 +152,10 @@ const authProtectedRoutes = [
   // Tables pages
   { path: "/customers", component: <BasicTable /> }, // es ko meny customer key section mey page lagai hey customer
   { path: "/tables-listjs", component: <ListJs /> },
-  { path: "/table-datatables", component: <DataTable /> },
+  { path: "/property", component: <DataTable /> },
 
   // Charts Pages
-  { path: "/chart-apexcharts", component: <ApexCharts /> },
+  { path: "/sellers", component: <ApexCharts /> },
   { path: "/chart-chartjscharts", component: <ChartJs /> },
   { path: "/chart-floatcharts", component: <FloatChart /> },
   { path: "/chart-jknobcharts", component: <JknobCharts /> },

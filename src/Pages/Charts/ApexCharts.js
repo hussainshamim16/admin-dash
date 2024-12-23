@@ -18,16 +18,16 @@ import { Card, CardBody, CardTitle, Col, Row, Container } from "reactstrap"
 import Breadcrumbs from "../../components/Common/Breadcrumb"
 
 const ApexCharts = () => {
-    document.title = "Apex Charts | Upzet - React Admin & Dashboard Template";
+    document.title = "Sellers | Lialani - Admin & Dashboard";
     return (
         <React.Fragment>
                 <div className="page-content">
 
                     <Container fluid>
-                        <Breadcrumbs title="Charts" breadcrumbItem="Apex Charts" />
+                        <Breadcrumbs title="Charts" breadcrumbItem="Sellers" />
 
                         <Row>
-                            <Col lg={6}>
+                            {/* <Col lg={6}>
                                 <Card>
                                     <CardBody>
                                         <CardTitle className="mb-4">
@@ -36,19 +36,19 @@ const ApexCharts = () => {
                                         <LineApexChart />
                                     </CardBody>
                                 </Card>
-                            </Col>
+                            </Col> */}
 
-                            <Col lg={6}>
+                            <Col lg={12}>
                                 <Card>
                                     <CardBody>
-                                        <CardTitle className="mb-4">Dashed Line</CardTitle>
+                                        <CardTitle className="mb-4"> Sellers Chart</CardTitle>
                                         <DashedLine />
                                     </CardBody>
                                 </Card>
                             </Col>
                         </Row>
 
-                        <Row>
+                        {/* <Row>
                             <Col lg={6}>
                                 <Card>
                                     <CardBody>
@@ -87,14 +87,14 @@ const ApexCharts = () => {
                                     </CardBody>
                                 </Card>
                             </Col>
-                        </Row>
+                        </Row> */}
 
-                        <Row>
-                            <Col lg={6}>
+                        {/* <Row>
+                            <Col lg={12}>
                                 <Card>
                                     <CardBody>
                                         <CardTitle className="mb-4">
-                                            Line, Column & Area Chart{" "}
+                                            Sellers Chart{" "}
                                         </CardTitle>
                                         <LineColumnArea />
                                     </CardBody>
@@ -108,8 +108,8 @@ const ApexCharts = () => {
                                     </CardBody>
                                 </Card>
                             </Col>
-                        </Row>
-
+                        </Row> */}
+{/* 
                         <Row>
                             <Col lg={6}>
                                 <Card>
@@ -127,7 +127,7 @@ const ApexCharts = () => {
                                     </CardBody>
                                 </Card>
                             </Col>
-                        </Row>
+                        </Row> */}
                     </Container>
                 </div>
         </React.Fragment>
