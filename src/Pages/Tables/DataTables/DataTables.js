@@ -23,7 +23,7 @@ const DataTables = () => {
                         </Col>
                     </Row>
 
-                    {/* <Row>
+                    <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
@@ -98,7 +98,7 @@ const DataTables = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                    </Row> */}
+                    </Row>
                 </Container>
             </div>
         </React.Fragment>

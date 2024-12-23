@@ -27,7 +27,7 @@ const ApexCharts = () => {
                         <Breadcrumbs title="Charts" breadcrumbItem="Sellers" />
 
                         <Row>
-                            {/* <Col lg={6}>
+                            <Col lg={6}>
                                 <Card>
                                     <CardBody>
                                         <CardTitle className="mb-4">
@@ -36,9 +36,9 @@ const ApexCharts = () => {
                                         <LineApexChart />
                                     </CardBody>
                                 </Card>
-                            </Col> */}
+                            </Col>
 
-                            <Col lg={12}>
+                            <Col lg={6}>
                                 <Card>
                                     <CardBody>
                                         <CardTitle className="mb-4"> Sellers Chart</CardTitle>
@@ -48,7 +48,7 @@ const ApexCharts = () => {
                             </Col>
                         </Row>
 
-                        {/* <Row>
+                        <Row>
                             <Col lg={6}>
                                 <Card>
                                     <CardBody>
@@ -87,10 +87,10 @@ const ApexCharts = () => {
                                     </CardBody>
                                 </Card>
                             </Col>
-                        </Row> */}
+                        </Row>
 
-                        {/* <Row>
-                            <Col lg={12}>
+                        <Row>
+                            <Col lg={6}>
                                 <Card>
                                     <CardBody>
                                         <CardTitle className="mb-4">
@@ -108,8 +108,8 @@ const ApexCharts = () => {
                                     </CardBody>
                                 </Card>
                             </Col>
-                        </Row> */}
-{/* 
+                        </Row>
+
                         <Row>
                             <Col lg={6}>
                                 <Card>
@@ -127,7 +127,7 @@ const ApexCharts = () => {
                                     </CardBody>
                                 </Card>
                             </Col>
-                        </Row> */}
+                        </Row>
                     </Container>
                 </div>
         </React.Fragment>

@@ -38,7 +38,7 @@ const SidebarData = [
     {
         label: "Tenants",
         icon: "mdi mdi-home-variant-outline",
-        url: "/chart-jknobcharts",
+        url: "/tenants",
         issubMenubadge: true,
         bgcolor: "bg-primary",
         badgeValue: "1"
@@ -46,7 +46,7 @@ const SidebarData = [
     {
         label: "Projects",
         icon: "ri-table-2",
-        url: "/chart-chartjscharts",
+        url: "/projects",
         issubMenubadge: true,
         bgcolor: "bg-primary",
         badgeValue: "6"
@@ -54,7 +54,7 @@ const SidebarData = [
     {
         label: "Contract",
         icon: "ri-bar-chart-line",
-        url: "/inbox",
+        url: "/contracts",
         issubMenubadge: true,
         bgcolor: "bg-primary",
         badgeValue: "6"
@@ -62,7 +62,7 @@ const SidebarData = [
     {
         label: "Users",
         icon: "ri-brush-line",
-        url: "/tables-listjs",
+        url: "/users",
         issubMenubadge: true,
         bgcolor: "bg-primary",
         badgeValue: "4"

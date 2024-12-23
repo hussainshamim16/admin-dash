@@ -93,10 +93,30 @@ import IconBoxicons from "../Pages/Icons/IconBoxicons"
 import VectorMaps from "../Pages/Maps/VectorMap";
 import MapsGoogle from "../Pages/Maps/GoogleMap.js";
 
+// my menu pages 
+import Customers from "../menu items/customers/index.js";
+import Sallers from "../menu items/sellers/index.js";
+import Property from "../menu items/properties/index.js";
+import Tenants from "../menu items/tenants/index.js";
+import Projects from "../menu items/projects/index.js";
+import Contracts from "../menu items/conracts/index.js";
+import Users from "../menu items/users/index.js";
+
 
 const authProtectedRoutes = [
+
+
+  // manu items
   //dashboard
   { path: "/dashboard", component: <Dashboard /> },
+  { path: "/customers", component: <Customers /> },
+  { path: "/sellers", component: <Sallers /> },
+  { path: "/property", component: <Property /> },
+  { path: "/tenants", component: <Tenants /> },
+  { path: "/projects", component: <Projects /> },
+  { path: "/contracts", component: <Contracts /> },
+  { path: "/users", component: <Users /> },
+  
 
   // Calender
   { path: "/calendar", component: <Calender /> },
@@ -150,12 +170,14 @@ const authProtectedRoutes = [
   { path: "/form-mask", component: <FormMask /> },
 
   // Tables pages
-  { path: "/customers", component: <BasicTable /> }, // es ko meny customer key section mey page lagai hey customer
+  { path: "/tables-basic", component: <BasicTable /> },
   { path: "/tables-listjs", component: <ListJs /> },
-  { path: "/property", component: <DataTable /> },
+  { path: "/table-datatables", component: <DataTable /> },
+  // { path: "/property", component: <DataTable /> },-------------------------  property
 
   // Charts Pages
-  { path: "/sellers", component: <ApexCharts /> },
+  { path: "/chart-apexcharts", component: <ApexCharts /> },
+  // { path: "/Sallers", component: <ApexCharts /> },-------------------  Sallers
   { path: "/chart-chartjscharts", component: <ChartJs /> },
   { path: "/chart-floatcharts", component: <FloatChart /> },
   { path: "/chart-jknobcharts", component: <JknobCharts /> },
