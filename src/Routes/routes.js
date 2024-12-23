@@ -150,7 +150,7 @@ const authProtectedRoutes = [
   { path: "/form-mask", component: <FormMask /> },
 
   // Tables pages
-  { path: "/tables-basic", component: <BasicTable /> },
+  { path: "/customers", component: <BasicTable /> }, // es ko meny customer key section mey page lagai hey customer
   { path: "/tables-listjs", component: <ListJs /> },
   { path: "/table-datatables", component: <DataTable /> },
 

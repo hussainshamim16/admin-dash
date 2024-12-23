@@ -14,7 +14,7 @@ const SidebarData = [
     {
         label: "Customers",
         icon: "ri-table-2",
-        url: "/tables-basic",
+        url: "/customers",
         issubMenubadge: true,
         bgcolor: "bg-primary",
         badgeValue: "4"

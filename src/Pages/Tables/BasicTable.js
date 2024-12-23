@@ -1,18 +1,30 @@
-import React from "react";
-import { Card, CardBody, Col, Container, Row } from "reactstrap";
+import React, { useState } from "react";
+
+import { Card, CardBody, Col, Container, Row ,Button} from "reactstrap";
 //Import Breadcrumb
 import Breadcrumbs from "../../components/Common/Breadcrumb";
 
+
 const BasicTable = () => {
-  document.title = "Basic Tables | Upzet - React Admin & Dashboard Template";
+  document.title = "Customers | Lilani - Admin & Dashboard";
+
+    const [modal_list, setmodal_list] = useState(false);
+      function tog_list() {
+          setmodal_list(!modal_list);
+      }
+  
+      const [modal_delete, setmodal_delete] = useState(false);
+      function tog_delete() {
+          setmodal_delete(!modal_delete);
+      }
 
   return (
     <React.Fragment>
       <div className="page-content">
         <Container fluid={true}>
-          <Breadcrumbs title="Tables" breadcrumbItem="Basic Tables" />
+          <Breadcrumbs title="Tables" breadcrumbItem="Customers" />
 
-          <Row>
+          {/* <Row>
             <Col lg={6}>
               <Card>
                 <CardBody>
@@ -195,24 +207,30 @@ const BasicTable = () => {
                 </CardBody>
               </Card>
             </Col>
-          </Row>
+          </Row> */}
 
           <Row>
-            <Col lg={6}>
+            <Col lg={12}>
               <Card>
+                <Col className="col-sm-auto">
+                  <div className="d-flex gap-1">
+                    <Button color="success" className="add-btn" onClick={() => tog_list()} id="create-btn"><i className="ri-add-line align-bottom me-1"></i> Add</Button>
+                    <Button color="soft-danger"
+                    // onClick="deleteMultiple()"
+                    ><i className="ri-delete-bin-2-line"></i></Button>
+                  </div>
+                </Col>
                 <CardBody>
-                  <h4 className="card-title">Table Border color</h4>
+                  <h4 className="card-title">Customers Details</h4>
                   <p className="card-title-desc">
-                    Add <code>.table-bordered</code> &amp;{" "}
-                    <code>.border-*</code> for colored borders on all sides of
-                    the table and cells.
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br /> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                   </p>
 
                   <div className="table-responsive">
                     <table className="table table-bordered border-primary mb-0">
                       <thead>
                         <tr>
-                          <th>#</th>
+                          <th>S/No</th>
                           <th>First Name</th>
                           <th>Last Name</th>
                           <th>Username</th>
@@ -244,7 +262,7 @@ const BasicTable = () => {
               </Card>
             </Col>
 
-            <Col lg={6}>
+            {/* <Col lg={6}>
               <Card>
                 <CardBody>
                   <h4 className="card-title">Borderless table</h4>
@@ -288,10 +306,10 @@ const BasicTable = () => {
                   </div>
                 </CardBody>
               </Card>
-            </Col>
+            </Col> */}
           </Row>
 
-          <Row>
+          {/* <Row>
             <Col lg={6}>
               <Card>
                 <CardBody>
@@ -505,8 +523,8 @@ const BasicTable = () => {
                 </CardBody>
               </Card>
             </Col>
-          </Row>
-
+          </Row> */}
+          {/* 
           <Row>
             <Col lg={12}>
               <Card>
@@ -566,7 +584,7 @@ const BasicTable = () => {
                 </CardBody>
               </Card>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </div>
     </React.Fragment>
