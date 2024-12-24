@@ -26,14 +26,14 @@ import withRouter from "../../components/Common/withRouter";
 //Import Breadcrumb
 import Breadcrumb from "../../components/Common/Breadcrumb";
 
-import avatar from "../../assets/images/users/avatar-1.jpg";
+import avatar from "../../assets/images/users/avatar-8.jpg";
 // actions
 import { editProfile, resetProfileFlag } from "../../store/actions";
 
 import { createSelector } from 'reselect';
 
 const UserProfile = () => {
-  document.title = "Profile | Upzet - React Admin & Dashboard Template";
+  document.title = "Profile | Lilani  Admin & Dashboard Template";
 
   const dispatch = useDispatch();
 
@@ -92,7 +92,7 @@ const { error, success } = useSelector(userprofilepage);
     <React.Fragment>
         <div className="page-content">
           <Container fluid>
-            <Breadcrumb title="Upzet" breadcrumbItem="Profile" />
+            <Breadcrumb title="Lilani" breadcrumbItem="Profile" />
 
             <Row>
               <Col lg="12">

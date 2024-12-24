@@ -8,7 +8,7 @@ import { Container, Row, Col, Card, CardBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const RecoverPassword = () => {
-    document.title = "Recover Password | Lilani - React Admin & Dashboard";
+    document.title = "Recover Password | Lilani Admin & Dashboard";
     return (
         <React.Fragment>
             <div className="bg-pattern" style={{height:"100vh"}}>

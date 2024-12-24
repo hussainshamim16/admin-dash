@@ -7,7 +7,7 @@ import { Container, Row, Col, Card, CardBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const LockScreen = () => {
-    document.title = "Lock Screen | Upzet - React Admin & Dashboard Template";
+    document.title = "Lock Screen | Lilani Admin & Dashboard";
     return (
         <React.Fragment>
 

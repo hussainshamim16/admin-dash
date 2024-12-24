@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import logolight from "../../assets/images/lilanitwo.png";
 import logodark from "../../assets/images/lilanitwo.png";
 
@@ -44,65 +44,74 @@ const Login = (props) => {
 
   const dispatch = useDispatch();
 
-  const validation = useFormik({
-    // enableReinitialize : use this flag when initial values needs to be changed
-    enableReinitialize: true,
+  // const validation = useFormik({
+  //   // enableReinitialize : use this flag when initial values needs to be changed
+  //   enableReinitialize: true,
 
-    initialValues: {
-      email: "admin@Themesdesign.com" || "",
-      password: "123456" || "",
-    },
-    validationSchema: Yup.object({
-      email: Yup.string().required("Please Enter Your Email"),
-      password: Yup.string().required("Please Enter Your Password"),
-    }),
-    onSubmit: (values) => {
-      dispatch(loginUser(values, props.router.navigate));
-    },
-  });
+  //   initialValues: {
+  //     email: "admin@Themesdesign.com" || "",
+  //     password: "123456" || "",
+  //   },
+  //   validationSchema: Yup.object({
+  //     email: Yup.string().required("Please Enter Your Email"),
+  //     password: Yup.string().required("Please Enter Your Password"),
+  //   }),
+  //   onSubmit: (values) => {
+  //     dispatch(loginUser(values, props.router.navigate));
+  //   },
+  // });
 
-  const loginpage = createSelector(
-    (state) => state.login,
-    (state) => ({
-      error: state.error,
-    })
-  );
-  // Inside your component
-  const { error } = useSelector(loginpage);
+  // const loginpage = createSelector(
+  //   (state) => state.login,
+  //   (state) => ({
+  //     error: state.error,
+  //   })
+  // );
+  // // Inside your component
+  // const { error } = useSelector(loginpage);
 
-  // handleValidSubmit
-  // const handleValidSubmit = (event, values) => {
-  //   dispatch(loginUser(values, props.router.navigate));
-  // };
+  // // handleValidSubmit
+  // // const handleValidSubmit = (event, values) => {
+  // //   dispatch(loginUser(values, props.router.navigate));
+  // // };
 
-  // const signIn = (res, type) => {
-  //   if (type === "google" && res) {
-  //     const postData = {
-  //       name: res.profileObj.name,
-  //       email: res.profileObj.email,
-  //       token: res.tokenObj.access_token,
-  //       idToken: res.tokenId,
-  //     };
-  //     dispatch(socialLogin(postData, props.router.navigate, type));
-  //   } else if (type === "facebook" && res) {
-  //     const postData = {
-  //       name: res.name,
-  //       email: res.email,
-  //       token: res.accessToken,
-  //       idToken: res.tokenId,
-  //     };
-  //     dispatch(socialLogin(postData, props.router.navigate, type));
-  //   }
-  // };
+  // // const signIn = (res, type) => {
+  // //   if (type === "google" && res) {
+  // //     const postData = {
+  // //       name: res.profileObj.name,
+  // //       email: res.profileObj.email,
+  // //       token: res.tokenObj.access_token,
+  // //       idToken: res.tokenId,
+  // //     };
+  // //     dispatch(socialLogin(postData, props.router.navigate, type));
+  // //   } else if (type === "facebook" && res) {
+  // //     const postData = {
+  // //       name: res.name,
+  // //       email: res.email,
+  // //       token: res.accessToken,
+  // //       idToken: res.tokenId,
+  // //     };
+  // //     dispatch(socialLogin(postData, props.router.navigate, type));
+  // //   }
+  // // };
 
   const signIn = (type) => {
     dispatch(socialLogin(type, props.router.navigate));
   };
 
-  //for facebook and google authentication
-  const socialResponse = (type) => {
-    signIn(type);
-  };
+  // my functonalities
+  const [email,setEmail] = useState('')
+  const [password,setpassword] = useState('')
+
+
+  const affterFormSubmit = ()=>{
+    
+  }
+
+  // //for facebook and google authentication
+    const socialResponse = (type) => {
+      signIn(type);
+    };
 
   useEffect(() => {
     document.body.className = "bg-pattern";
@@ -148,15 +157,15 @@ const Login = (props) => {
                       className="form-horizontal"
                       onSubmit={(e) => {
                         e.preventDefault();
-                        validation.handleSubmit();
-                        return false;
+                        // validation.handleSubmit();
+                        // return false;
                       }}
                     >
-                      {error ? (
+                      {/* {error ? (
                         <Alert color="danger">
                           <div>{error}</div>
                         </Alert>
-                      ) : null}
+                      ) : null} */}
                       <Row>
                         <Col md={12}>
                           <div className="mb-4">
@@ -166,45 +175,45 @@ const Login = (props) => {
                               className="form-control"
                               placeholder="Enter email"
                               type="email"
-                              onChange={validation.handleChange}
-                              onBlur={validation.handleBlur}
-                              value={validation.values.email || ""}
-                              invalid={
-                                validation.touched.email &&
-                                validation.errors.email
-                                  ? true
-                                  : false
-                              }
+                              // onChange={validation.handleChange}
+                              // onBlur={validation.handleBlur}
+                              // value={validation.values.email || ""}
+                              // invalid={
+                              //   validation.touched.email &&
+                              //   validation.errors.email
+                              //     ? true
+                              //     : false
+                              // }
                             />
-                            {validation.touched.email &&
+                            {/* {validation.touched.email &&
                             validation.errors.email ? (
                               <FormFeedback type="invalid">
                                 <div>{validation.errors.email}</div>
                               </FormFeedback>
-                            ) : null}
+                            ) : null} */}
                           </div>
                           <div className="mb-4">
                             <Label className="form-label">Password</Label>
                             <Input
                               name="password"
-                              value={validation.values.password || ""}
+                              // value={validation.values.password || ""}
                               type="password"
                               placeholder="Enter Password"
-                              onChange={validation.handleChange}
-                              onBlur={validation.handleBlur}
-                              invalid={
-                                validation.touched.password &&
-                                validation.errors.password
-                                  ? true
-                                  : false
-                              }
+                              // onChange={validation.handleChange}
+                              // onBlur={validation.handleBlur}
+                              // invalid={
+                              //   validation.touched.password &&
+                              //   validation.errors.password
+                              //     ? true
+                              //     : false
+                              // }
                             />
-                            {validation.touched.password &&
+                            {/* {validation.touched.password &&
                             validation.errors.password ? (
                               <FormFeedback type="invalid">
                                 <div> {validation.errors.password} </div>
                               </FormFeedback>
-                            ) : null}
+                            ) : null} */}
                           </div>
 
                           <Row>

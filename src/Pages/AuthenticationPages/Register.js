@@ -7,11 +7,11 @@ import { Container, Row, Col, Card, CardBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
-    document.title = "Register | Upzet - React Admin & Dashboard Template";
+    document.title = "Register | Lilani  Admin & Dashboard ";
     return (
         <React.Fragment>
 
-            <div className="bg-pattern" style={{height:"100vh"}}>
+            <div className="bg-pattern" style={{ height: "100vh" }}>
                 <div className="bg-overlay"></div>
                 <div className="account-pages pt-5">
                     <Container>
@@ -57,8 +57,8 @@ const Register = () => {
                                     </CardBody>
                                 </Card>
                                 <div className="mt-5 text-center">
-                                    <p className="text-white-50">Already have an account ?<Link to="/auth-login" className="fw-medium text-primary"> Login </Link> </p>
-                                    <p className="text-white-50">© {new Date().getFullYear()} Upzet. Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                                    <p className="text-white-50">Don't have an account ?  <Link to="/auth-register" className="fw-medium text-primary"> Register  </Link> </p>
+                                    <p className="text-white-50">© {new Date().getFullYear()} Lilani. Crafted with <i className="mdi mdi-heart text-danger"></i> by <a href='https://solutionsgram.com/' target='_blanck'>Solutionsgram</a></p>
                                 </div>
                             </Col>
                         </Row>
