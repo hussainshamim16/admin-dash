@@ -19,7 +19,7 @@ const OverView = () => {
                     <CardBody>
                         <div className="d-flex align-items-center">
                             <div className="flex-grow-1">
-                                <h5 className="card-title">Overview</h5>
+                                <h5 className="card-title">Sellers</h5>
                             </div>
                             <div className="flex-shrink-0">
                                 <div>

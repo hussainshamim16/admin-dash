@@ -11,7 +11,7 @@ const LatestTransation = () => {
                 <Col lg={12}>
                     <div className="card">
                         <div className="card-body">
-                            <h4 className="card-title mb-4">Latest Transaction</h4>
+                            <h4 className="card-title mb-4">Users</h4>
 
                             <div className="table-responsive">
                                 <table className="table table-centered table-nowrap mb-0">

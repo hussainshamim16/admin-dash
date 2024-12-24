@@ -15,7 +15,7 @@ const Notifications = () => {
       <Col lg={4}>
         <Card>
           <CardBody>
-            <CardTitle>Notifications</CardTitle>
+            <CardTitle>Tenants</CardTitle>
 
             <div className="pe-3">
               <SimpleBar style={{ maxHeight: "287px" }}>

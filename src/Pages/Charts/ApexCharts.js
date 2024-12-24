@@ -38,7 +38,7 @@ const ApexCharts = () => {
                                 </Card>
                             </Col>
 
-                            <Col lg={6}>
+                            <Col lg={12}>
                                 <Card>
                                     <CardBody>
                                         <CardTitle className="mb-4"> Sellers Chart</CardTitle>

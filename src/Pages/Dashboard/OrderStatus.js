@@ -16,7 +16,7 @@ const OrderStatus = () => {
             <Col xl={4}>
                 <Card>
                     <CardBody>
-                        <CardTitle>Order Stats</CardTitle>
+                        <CardTitle>Projects Status</CardTitle>
                         <div>
                             <ul className="list-unstyled">
                                 {OrderStatusData.map((item, key) => (<li key={key} className="py-3">
